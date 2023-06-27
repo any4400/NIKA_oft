@@ -1,0 +1,111 @@
+.channel-wrap{
+    padding: 3.2rem 0;
+    background: linear-gradient(12.72deg, #DBEBE5 14.05%, #E8F0DB 91.53%);
+}
+.channel{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.channel-control ul li:not(:first-child){
+    padding-top: 1.6rem;
+}
+.channel-control ul li:not(:last-child){
+    border-bottom: 1px solid var(--dark-green60);
+    padding-bottom: 1.6rem;
+}
+.channel-control ul li a{
+    align-items: center;
+    gap: 1.6rem;
+    display: flex;
+    color: var(--dark-green60);
+    font-weight: 600;
+    line-height: 2rem;
+    transition: 0.3s;
+}
+.channel-control ul li a span{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.channel-control ul li a svg{
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+}
+.channel-control ul li a.active,
+.channel-control ul li a:hover{
+    color: var(--main-green);
+}
+
+.channel-link a{
+    width: 19.8rem;
+}
+
+.channel-video{
+    position: relative;
+    height: 17.7rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.channel-video iframe,
+.channel-video img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.channel-video img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (min-width: 468px) {
+    .channel-video{
+        height: 25.7rem;
+    }
+}
+@media (min-width: 668px) {
+    .channel-wrap{
+        padding: 4rem 0;
+    }
+    .channel-video{
+        height: 34.9rem;
+    }
+}
+@media (min-width: 1024px) {
+    .channel-wrap{
+        padding: 6rem 0;
+    }
+    .channel{
+        flex-direction: row;
+        gap: 3.2rem;
+    }
+    .channel-control{
+        width: 100%;
+    }
+    .channel-link a{
+        width: 26.4rem;
+        font-size: 1.6rem;
+    }
+    .channel-video{
+        height: 33.5rem;
+        width: 59.7rem;
+        flex-shrink: 0;
+    }
+}
+@media (min-width: 1500px) {
+    .channel{
+        width: 107.8rem;
+        margin: 0 auto;
+    }
+    .channel-control ul li:not(:first-child){
+        padding-top: 2.4rem;
+    }
+    .channel-control ul li:not(:last-child){
+        padding-bottom: 2.4rem;
+    }
+}

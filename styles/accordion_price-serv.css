@@ -1,0 +1,81 @@
+.accordion_price-serv{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.accordion_price-serv-elem-control{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #000000;
+}
+.accordion_price-serv-elem-control svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: 0.3s;
+}
+.accordion_price-serv-elem-control svg:nth-child(2){
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.accordion_price-serv-elem_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.625rem;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    box-shadow: 0.2rem 0.2rem 1rem 0 #52807B1A;
+    border-radius: 0.8rem;
+    color: var(--dark-green);
+    cursor: pointer;
+}
+.accordion_price-serv-elem_content{
+    margin-top: 0.8rem;
+}
+
+.accordion_price-serv-footnote{
+    margin-top: 2.4rem;
+    color: var(--dark-brown60);
+    font-weight: 300;
+    line-height: 1.82rem;
+}
+.accordion_price-serv-elem_content{
+    display: none;
+}
+/* Делаем развёрнутым 2й элемент аккордеона
+ у стрелки второго элемента в html добавлен класс accordion-elem-open--js*/
+ .accordion_price-serv-elem:nth-child(1) .accordion_price-serv-elem_content{
+    display: block; 
+}
+.accordion_price-serv .accordion-elem-open--js  svg:nth-child(2){
+    transform: translate(-50%, -50%) rotate(0);
+}
+
+@media (min-width: 1500px){
+    .accordion_price-serv-elem_content .price_item{
+        width: 100%;
+    }
+    .accordion_price-serv-elem_content .price_item .price_text {
+        width: 97.7rem;
+    }
+}
+@media (min-width:1024px) {
+    .accordion_price-serv-elem_title{
+        padding: 2.4rem;
+        font-size: 1.8rem;
+        line-height: 2.52rem;
+        font-weight: 600;
+    }
+    .accordion_price-serv-footnote{
+        margin-top: 3.2rem;
+    }
+}

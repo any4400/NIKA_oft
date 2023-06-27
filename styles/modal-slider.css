@@ -1,0 +1,8 @@
+.fancybox__container {
+    --fancybox-bg: rgba(50, 50, 50, 0.4);
+    backdrop-filter: blur(4px);
+}
+.f-button,
+.is-compact .fancybox__footer{
+    background-color: transparent;
+}

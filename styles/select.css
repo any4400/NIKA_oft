@@ -1,0 +1,85 @@
+.select {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+} 
+.select-title {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: calc(0.9rem - 1px) calc(1.6rem - 1px) calc(0.9rem - 1px) calc(1.6rem - 1px);
+    border: 1px solid var(--main-green);
+    border-radius: 0.8rem;
+    background-color: var(--white);
+    color: var(--dark-brown60);
+    cursor: pointer;
+}
+.select input {
+  display: none;
+}
+.options {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  border-top: none;
+  background-color: var(--white);
+  color: var(--dark-green);
+  box-shadow: 0.2rem 0.2rem 1rem rgba(82, 128, 123, 0.1);
+  z-index: var(--select-index);
+}
+.options_wrapper {
+  max-height: 31.2rem;
+  overflow-y: scroll;
+}
+.options_wrapper>label:first-of-type, .options_wrapper .checkbox_wrapper:first-of-type>label{
+  padding-top: 0; 
+}
+.options_wrapper>label:last-of-type, .options_wrapper .checkbox_wrapper:last-of-type>label{
+  padding-bottom: 0;
+}
+.option-label {
+  display: block;
+  padding: 0.8rem 0;
+  cursor:pointer;
+}
+.option-label:hover {
+  color: var(--main-green);
+}
+.select-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.6rem;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.00011 8.09375L12.0001 14.0938L18.0001 8.09375L19.0608 9.15441L12.5304 15.6847C12.2375 15.9776 11.7627 15.9776 11.4698 15.6847L4.93945 9.15441L6.00011 8.09375Z' fill='%231D6157'/%3e%3c/svg%3e ");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease-out;
+}
+.select.open .select-title::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+/* скролл */
+/* Works on Firefox */
+.select  {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-green) #f0f0f1;
+}
+/* Works on Chrome, Edge, and Safari */
+.select ::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.select ::-webkit-scrollbar-thumb {
+  background-color: var(--dark-green);
+}

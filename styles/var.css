@@ -1,0 +1,48 @@
+:root {
+    --white: #fff;
+    --main-green: #1D6157;
+    --main-red: #B8323F;
+
+    --light-green: #628E87;
+    --dark-green: #323232;
+    --transparent-green: #D5E9B5;
+    --deep-dark-green: #1F6157;
+    --bg-green: #F4F9F7;
+    --lime: #D5E9B5;
+    --swamp: #465152;
+    --light-red: #FFF3F4;
+    --dark-red: #94222D;
+    --dark-brown60: #808080;
+    --dark-green60: #739C96;
+    --light-gray: #787E80;
+    --transparent-gray: #FAFCFB;
+    --light-blue: #C9E4DA;
+    --transparent-blue: #F8FDFF;
+    --blue-green: #6399AB;
+    --blue-green-grey: #718694;
+    --blue-green-dark:#4F7E8D;
+    --mint: #7DBBB1;
+    --gray: #DBDDDC;
+    --yellow:#FDD400;
+    --youtube:#FF0000;
+    --youtube-hover:#E80606;
+    --telegram:#10AADE;
+    --telegram-hover:#0792C0;
+    --vk:#0079FF;
+    --vk-hover:#0062CE;
+    --ok:#FF7700;
+    --ok-hover:#E46B01; 
+
+    --normal-index: auto;
+    --bg-index: -10;
+    --zero-index: 0;
+    --on-top-index: 10;
+    --select-index: 20;
+    --tab-bar-index: 50;
+    --spacer-index: 75;
+    --header-index: 100;
+    --overlay-index: 500;
+    --mobile-menu-index: 700;
+    --mobile-header-index: 750;
+    --modal-index: 999;
+}

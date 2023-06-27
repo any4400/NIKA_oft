@@ -1,0 +1,459 @@
+/* стили для всех карточек специалистов из слайдера: */
+* {
+    box-sizing:border-box;
+}
+.specialists_slider {
+    position: relative;
+}
+/* .specialists_slider .swiper-wrapper {
+    margin-left: 1.5rem;
+} */
+.specialists_slide {
+    position: relative;
+    width: 28.8rem;
+    height: 55.6rem;
+    padding: 1.6rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background:linear-gradient(12.72deg, #DBEBE5 14.05%, #E8F0DB 91.53%);
+    box-shadow: 2px 2px 10px rgba(82, 128, 123, 0.1);
+    transition: .5s;
+}
+.specialists_rating {
+    position: absolute;
+    display: flex;
+    width: 7.6rem;
+    height: 4.2rem;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: var(--white);
+    opacity: 0.8;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 0px 2rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    text-align: center;
+    color: var(--dark-green);
+    vertical-align: top;
+}
+.specialists_rating:before {
+    content:"";
+    display: inline-block;
+    width: 2.2rem;
+    height: 2.1rem;
+    margin-right: 0.4rem;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.62134 0.612435C9.74438 0.250961 10.2556 0.25096 10.3787 0.612434L12.3774 6.48422C12.4326 6.64632 12.5848 6.75532 12.756 6.75532H19.183C19.5749 6.75532 19.733 7.26063 19.4109 7.48401L14.2439 11.0674C14.0972 11.1692 14.0357 11.3559 14.0932 11.525L16.0743 17.345C16.1986 17.7103 15.7847 18.0225 15.4677 17.8026L10.228 14.1687C10.0909 14.0737 9.90914 14.0737 9.77205 14.1687L4.53232 17.8026C4.21525 18.0225 3.80137 17.7103 3.92571 17.345L5.90679 11.525C5.96434 11.3559 5.90283 11.1692 5.75608 11.0674L0.589094 7.48401C0.266994 7.26063 0.425068 6.75532 0.817048 6.75532H7.24396C7.4152 6.75532 7.56745 6.64632 7.62263 6.48422L9.62134 0.612435Z' fill='%23FDD400'/%3e%3c/svg%3e ");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.specialists_img {
+    position: relative;
+    width: 25.6rem;
+    height: 25.6rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.specialists_img img{
+    width: 100%;
+}
+.img_round {
+    position: absolute;
+    z-index: var(--zero-index);
+    top: 2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 25.6rem;
+    height: 25.6rem;
+    border-radius:50%;
+    background-color: var(--main-green);
+}
+
+.specialists_info {
+    margin-top: 2.2rem;
+    text-align: center;
+    color: var(--dark-green);
+}
+.specialists_title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.52rem;
+}
+.specialists_experience {
+    margin-top: 0.8rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.82rem;
+}
+.specialists_experience:after {
+    content:'';
+    display: block;
+    width: 12.6rem;
+    height: 1px;
+    margin: 0.8rem auto;
+    background-color: var(--dark-brown60);
+}
+.text_wrapper {
+    height: 5.2rem;
+}
+.specialists_text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.82rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.specialists_price {
+    margin-top: 1.6rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: var(--main-green);
+}
+a.as-button.promo.specialists_btn {
+    position: absolute;
+    display: block;
+    width: 25.6rem;
+    bottom: 1.6rem;
+}
+a.as-button.specialists_btn {
+    margin-top: 2.4rem;
+}
+.specialists .swiper-button-prev, .specialists .swiper-button-next {
+    display: none;
+}
+.specialists_slider_stub-blank {
+    display: none;;
+}
+/* добавленные стили для карточек специалистов со стр Специалисты: */
+.specialists_cards_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+}
+.specialists_cards_wrapper .specialists_slide {
+    width: 100%;
+    height: 56.4rem;
+    margin-right: 0;
+    overflow: hidden;
+}
+.specialists_cards_wrapper .specialists_slide .back_side{
+    display: none;
+}
+.specialists_cards_wrapper .specialists_info {
+    margin-top: 2.8rem;
+}
+.specialists_cards_wrapper .specialists_rating {
+    width: 7rem;
+}
+.specialists_cards_wrapper .text_wrapper {
+    height: 4rem;
+}
+.specialists_cards_wrapper .specialists_experience:after {
+    margin: 1.6rem auto;
+}
+
+.specialists_cards a.as-button.arrow-down.specialists_cards_more {
+    width: 14.2rem;
+    margin-top: 2.4rem;
+}
+
+@media (min-width:468px) {
+    /* стили для всех карточек специалистов из слайдера: */
+    .specialists_slider .swiper-wrapper {
+        margin-left: 2.4rem;
+    }
+    .specialists_slider .specialists_slide {
+        margin: 0;
+    }
+    .specialists_slider_stub-blank {
+        display: block;
+        width: 2.4rem;
+    }
+}
+@media (min-width:668px) {
+    /* стили для всех карточек специалистов из слайдера: */
+    .specialists_slider .swiper-wrapper {
+        margin-left: 4.4rem;
+    }
+    .specialists_slider_stub-blank {
+        width: 4.4rem;
+    }
+    /* добавленные стили для карточек специалистов со стр Специалисты: */
+    .specialists_cards_wrapper .specialists_slide {
+        width: 58rem;
+        height: 26.7rem;
+        margin: 0 auto;
+    }
+    .specialists_cards_wrapper .front_side{
+        display: flex;
+        gap: 3.2rem;
+    }
+    .specialists_cards_wrapper .specialists_img {
+        width: 22.8rem;
+        height: 22.8rem;
+    }
+    .specialists_cards_wrapper .img_round {
+        width: 22.8rem;
+        height: 22.8rem;
+        top: 2.2rem;
+        left: 1.6rem;
+        transform: translateX(0);
+    } 
+    .specialists_cards_wrapper .specialists_info{
+        width: 28.8rem;
+        text-align: left;
+        margin-top: 0;
+    }
+    .specialists_cards_wrapper .specialists_title{
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    .specialists_cards_wrapper .specialists_experience:after {
+        width: 100%;
+        margin: 0.8rem auto;
+    }
+    .specialists_cards_wrapper .text_wrapper{
+        height: 5.9rem;
+    }
+    .specialists_cards_wrapper .specialists_text {
+        -webkit-line-clamp: 3;
+    }
+    .specialists_cards_wrapper a.specialists_btn {
+        margin-top: 1.3rem;
+    }
+    .specialists_cards_wrapper .specialists_rating {
+        width: 7.6rem;
+    }
+}
+@media (min-width:1024px) {
+    /* стили для всех карточек специалистов из слайдера: */
+    .specialists_slider .swiper-wrapper {
+        margin-left: 14.5rem;
+    }
+    .specialists_slider .swiper-button-prev, .specialists_slider .swiper-button-next {
+        display: block;
+        top: 28rem;
+    }
+    .specialists_slider_stub-blank {
+        width: 28rem;
+    }
+    /* добавленные стили для карточек специалистов со стр Специалисты: */
+    .specialists_cards_wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .specialists_cards_wrapper .specialists_slide {
+        width: 28.8rem;
+        height: 55.6rem;
+        margin: 0;
+        padding: 0;
+    }
+    .specialists_cards_wrapper .front_side{
+        display: block;
+        padding: 1.6rem;
+        opacity: 1;
+        transition: opacity .5s;
+    }
+    .specialists_cards_wrapper .specialists_img {
+        width: 25.6rem;
+        height: 25.6rem;
+    }
+    .specialists_cards_wrapper .img_round {
+        width: 25.6rem;
+        height: 25.6rem;
+        top: 2.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+    .specialists_cards_wrapper .specialists_info{
+        width: 100%;
+        text-align: center;
+        margin-top: 2.2rem;
+    }
+    .specialists_cards_wrapper .specialists_title{
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.52rem;
+    }
+    .specialists_cards_wrapper .specialists_experience:after {
+        width: 12.6rem;
+    }
+    .specialists_cards_wrapper .text_wrapper{
+        height: 5.2rem;
+    }
+    .specialists_cards_wrapper .specialists_text {
+        -webkit-line-clamp: 2;
+    }
+    .specialists_cards_wrapper .front_side a.specialists_btn {
+        width: 25.6rem;
+        margin-top: 2.4rem;
+    }
+    .specialists_cards_wrapper .specialists_slide .back_side{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1.6rem;
+        background-color: var(--white);
+        opacity: 0;
+        transition: opacity .5s;
+    }
+    .specialists_cards_wrapper .specialists_slide:hover .back_side{
+        opacity: 1;
+    }
+    .specialists_cards_wrapper .back_side .specialists_title{
+        height: 5rem;
+        color: var(--main-green);
+    }
+    .specialists_cards_wrapper .back_side  a.specialists_address {
+        display: inline-block;
+        margin-top: 1.6rem;
+        margin-left: 2rem;
+        color:var(--dark-green);
+    }
+    .specialists_cards_wrapper .back_side  a.specialists_address:hover {
+        color:var(--main-green);
+    }
+    .specialists_cards_wrapper .back_side a.specialists_address:before{
+        content:'';
+        display: block;
+        position: absolute;
+        width: 1.6rem;
+        height: 1.6rem;
+        left: 1.6rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.00258 14.6693C8.00258 14.6693 13.3359 10.6693 13.3359 6.66927C13.3359 5.25478 12.774 3.89823 11.7738 2.89803C10.7736 1.89784 9.41707 1.33594 8.00258 1.33594C6.5881 1.33594 5.23154 1.89784 4.23135 2.89803C3.23115 3.89823 2.66925 5.25478 2.66925 6.66927C2.66925 10.6693 8.00258 14.6693 8.00258 14.6693ZM9.99998 6.66406C9.99998 7.76863 9.10455 8.66406 7.99998 8.66406C6.89541 8.66406 5.99998 7.76863 5.99998 6.66406C5.99998 5.55949 6.89541 4.66406 7.99998 4.66406C9.10455 4.66406 9.99998 5.55949 9.99998 6.66406Z' fill='%231D6157'/%3e%3c/svg%3e ");
+    }
+    .specialists_cards_wrapper .back_side .ul-wrapper {
+        height: 27rem;
+        margin-top: 1.6rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 12;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+    .specialists_cards_wrapper .back_side .ul-wrapper ul{
+        list-style: none;
+        margin-left: 2.8rem;
+    }
+    .specialists_cards_wrapper .back_side .ul-wrapper ul li {
+        margin-bottom: 0.8rem;
+    }
+    .specialists_cards_wrapper .back_side .ul-wrapper ul li:before {
+        content:  "—";
+        margin-left:-2.2rem;
+        margin-right: 1.2rem;
+    }
+    .specialists_cards_wrapper .back_side .specialists_price {
+        margin-top: 1.6rem;
+    }
+    .specialists_cards_wrapper .back_side .button-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 2.8rem;
+    }
+    .specialists_cards_wrapper .back_side .button-wrapper a{
+        width: 100%;
+    }
+
+ 
+}
+@media (min-width:1500px) {
+    .specialists_slider .swiper-wrapper {
+        margin-left: 16rem;
+    }
+    .specialists_cards_wrapper{
+        margin: 0 auto;
+        gap: 3.2rem;
+    }
+
+    .specialists_cards_wrapper .specialists_slide {
+        width: 65.4rem;
+        height: 28.2rem;
+        margin: 0;
+    }
+    .specialists_cards_wrapper .specialists_slide .front_side{
+        display: flex;
+        gap: 3.2rem;
+        padding: 2.4rem;
+    }
+
+    .specialists_cards_wrapper .specialists_img {
+        width: 22.8rem;
+        height: 22.8rem;
+        margin: 0;
+    }
+    .specialists_cards_wrapper .img_round {
+        width: 22.8rem;
+        height: 22.8rem;
+        top: 3rem;
+        left: 2.4rem;
+        transform: translateX(0);
+    }
+
+    .specialists_cards_wrapper .specialists_info{
+        width: 34.6rem;
+        text-align: left;
+        margin-top: 0;
+    }
+    .specialists_cards_wrapper .specialists_experience:after {
+        width: 100%;
+    }
+    .specialists_cards_wrapper .text_wrapper{
+        height: 5.7rem;
+        -webkit-line-clamp: 3;
+    }
+    .specialists_cards_wrapper .specialists_text {
+        -webkit-line-clamp: 3;
+    }
+    .specialists_cards_wrapper a.as-button.promo.specialists_btn {
+        width: 28.8rem;
+        margin-top: 0.7rem;
+    }
+
+    .specialists_cards_wrapper .specialists_slide .back_side{
+        padding: 2.4rem 3.2rem;
+    }
+    .specialists_cards_wrapper .back_side .specialists_title{
+        height: initial;
+    }
+    .specialists_cards_wrapper .back_side a.specialists_address:before{
+        left: 3.2rem;
+    }
+    .specialists_cards_wrapper .back_side .ul-wrapper {
+        height: 10.2rem;
+        margin-top: 1rem;
+        -webkit-line-clamp: 4;
+    }
+    .specialists_cards_wrapper .back_side .specialists_price {
+        position: absolute;
+        top: 2.4rem;
+        right: 3.2rem;
+        margin-top: 0;
+    }
+    .specialists_cards_wrapper .back_side .button-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 1.6rem;
+        margin-top: 2.4rem;
+    }
+    .specialists_cards_wrapper .back_side .button-wrapper a{
+        width: 25.6rem;
+    }
+
+}

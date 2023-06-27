@@ -1,0 +1,183 @@
+* {
+    box-sizing:border-box;
+}
+.oft-future_bunner {
+    max-height: 21.3rem;
+}
+.oft-future_bunner img{
+    width:100%;
+    max-height: 21.3rem;
+}
+.oft-future_info {
+    padding: 2.4rem 1.5rem;
+}
+
+.oft-future_title{
+    margin-bottom: 1.6rem;
+    color: var(--main-green);
+    text-align-last: left;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+}
+/* .info_wrapper {
+    height: 12.8rem;
+} */
+.oft-future_text {
+    color: var(--dark-brown60);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.oft-future_text ul {
+    margin-left: 2rem;
+    list-style-type: disc;
+}
+
+.oft-future_price {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    align-items: center;
+    margin-top: 1.6rem;
+}
+.oft-future_price .new-price {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: var(--main-green);
+}
+.oft-future_price .old-price {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    text-decoration-line: line-through;
+    color: var(--dark-green60);
+}
+a.oft-future_btn {
+    display: block;
+    margin: 2.4rem auto;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+}
+.oft-future_slider .swiper-button-prev, .oft-future_slider .swiper-button-next {
+    display: none;
+}
+.oft-future_slider .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal  {
+    padding-top: 0;
+}
+
+
+@media (min-width:468px) {
+    .oft-future_bunner {
+        max-height: 22.7rem;
+        overflow: hidden;
+    }
+    .oft-future_bunner img{
+        max-height: 22.7rem;
+        object-fit: cover;
+    }
+    .oft-future_info {
+        padding: 2.4rem;
+    }
+
+}
+@media (min-width:668px) {
+
+    .oft-future_bunner {
+        position: relative;
+        max-height: 35.8rem;
+    }
+    .oft-future_bunner img{
+        max-height: 35.8rem;
+    }
+    .oft-future_info {
+        position: absolute;
+        top: 2.4rem;
+        right: 4.6rem;
+        width: 33.6rem;
+        border-radius: 8px;
+        background-color: var(--white);
+        opacity: 0.9;
+    }
+
+    .oft-future_price {
+        justify-content: start;
+    }
+    a.oft-future_btn {
+        width: 21.6rem;
+        margin-top: 32px;
+        margin-left: 0;
+    }
+    .oft-future_slider .swiper-pagination {
+        position: relative;
+    }
+    .oft-future_slider .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal  {
+        padding-top: 2.4rem;
+    }
+}
+
+@media (min-width:1024px) {
+    .oft-future_bunner {
+        max-height: 45.4rem;
+    }
+    .oft-future_bunner img{
+        max-height: 45.4rem;
+    }
+    .oft-future_info {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12.1rem;
+        width: 38.4rem;
+        border-radius: 8px;
+        padding: 4.8rem;
+    }
+
+    .oft-future_title {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    a.oft-future_btn {
+        width: 29rem;
+    }
+    .oft-future .swiper-button-prev, .oft-future .swiper-button-next {
+        display: block;
+    }
+    .oft-future_slider .swiper-button-prev, .oft-future_slider .swiper-button-next {
+        top: 19.6rem;
+    }
+    .oft-future .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal  {
+        padding-top: 3.2rem;
+    }
+}
+@media (min-width:1500px) {
+    .oft-future_bunner {
+        max-height: 57.2rem;
+    }
+    .oft-future_bunner img{
+        max-height: 57.2rem;
+    }
+    .oft-future_info {
+        width: 49.6rem;
+        right: 16rem;
+    }
+    .oft-future_text {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.08rem;
+    }
+    a.oft-future_btn {
+        width: 29rem;
+    }
+    .oft-future_slider .swiper-button-prev, .oft-future_slider .swiper-button-next {
+        top: 26.6rem;
+    }
+
+}

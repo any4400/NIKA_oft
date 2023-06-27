@@ -1,0 +1,244 @@
+
+* {
+    box-sizing:border-box;
+}
+.mobile-menu {
+    /* position: relative; */
+    z-index: var(--mobile-menu-index);
+    overflow: hidden;
+}
+
+.mobile-menu_wrapper {
+    display: flex;
+    max-width: 100%;
+    /* overflow: hidden; */
+    transition: all 0.5s ease-in-out;
+}
+
+.mobile-menu_header {
+    position: fixed;
+    z-index: var(--mobile-header-index);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 1.5rem;
+    width: 100%;
+    height: 5.6rem;
+    background-color: var(--main-green);
+}
+.mobile-menu_close_btn {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.2559 19.2558C18.8449 19.6668 18.1785 19.6668 17.7675 19.2558L4.74417 6.23245C4.33316 5.82144 4.33316 5.15507 4.74417 4.74407C5.15517 4.33306 5.82155 4.33306 6.23255 4.74407L19.2559 17.7674C19.6669 18.1784 19.6669 18.8448 19.2559 19.2558Z' fill='white'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.74419 19.2559C4.33319 18.8449 4.33319 18.1785 4.74419 17.7675L17.7675 4.74417C18.1786 4.33316 18.8449 4.33316 19.2559 4.74417C19.6669 5.15518 19.6669 5.82155 19.2559 6.23255L6.23258 19.2559C5.82157 19.6669 5.1552 19.6669 4.74419 19.2559Z' fill='white'/%3e%3c/svg%3e ");}
+.mobile-menu_profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+.profile_img {
+    width: 1.3rem;
+    height: 1.5rem;
+}
+.profile_img svg{
+    width: 1.3rem;
+    height: 1.5rem;
+}
+.profile_info {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--white);
+}
+.mobile-menu_profile:hover .profile_info{
+    color: var(--lime);
+}
+.mobile-menu_profile:hover .profile_img svg{
+    fill: var(--lime);
+}
+
+.mobile-menu_body {
+    padding-top: 7.2rem;
+    width: 100%;
+    flex-basis: 100%;
+    flex-shrink: 0;
+}
+.mobile-submenu_body {
+    padding: 7.2rem 0 3.2rem 0;
+    width: 100%;
+    flex-basis: 100%;
+    flex-shrink: 0;
+}
+
+.submenu_title {
+    display: block;
+    width: 100%;
+    padding: 1.6rem 1.5rem;
+    border-bottom: 1px solid #DBDDDC;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    text-transform: uppercase;
+    color: var(--dark-green);
+}
+.mobile-menu_item {
+    position: relative;
+    display: block;
+    padding: 1.6rem 4rem 1.6rem 1.5rem;
+    border-bottom: 1px solid #DBDDDC;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    text-transform: uppercase;
+    color: var(--dark-green);
+}
+.mobile-submenu_body .mobile-menu_item {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.89rem;
+    color: var(--dark-brown60);
+    text-transform:initial;
+}
+.mobile-menu .arrow:after {
+    content:"";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.5rem;
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.09473 12.4999L9.09473 8.49989L5.09473 4.49989L6.15539 3.43923L10.6857 7.96956C10.9786 8.26245 10.9786 8.73732 10.6857 9.03022L6.15539 13.5605L5.09473 12.4999Z' fill='%231D6157'/%3e%3c/svg%3e ");
+}
+.mobile-menu_item:hover, .submenu_item:hover {
+    background-color: var(--bg-green);
+}
+.back_item {
+    position: relative;
+    display: block;
+    padding: 0 3.9rem 1.6rem 3.9rem ;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.89rem;
+    color: var(--dark-brown60);
+}
+
+.back_item::before {
+    content:"";
+    position: absolute;
+    left: 1.5rem;
+    top:0.1rem;
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.6074 2.10156L11.7388 3.23293L6.80445 8.16725L11.7388 13.1016L10.6074 14.2329L4.54171 8.16725L10.6074 2.10156Z' fill='%23808080'/%3e%3c/svg%3e ");
+}
+
+
+.mobile-menu_footer {
+    padding: 0 1.55rem 3.2rem 1.55rem;
+}
+.mobile-menu_footer .social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18.2rem;
+    /* height: 1.8rem; */
+    margin-bottom: 2.4rem;
+}
+.mobile-menu_footer .social li {
+    height: 1.8rem;
+}
+.mobile-menu_footer .social svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: var(--main-green);
+}
+.mobile-menu_footer .media:hover  svg{
+    fill: var(--light-green);
+}
+.mobile-menu_footer .contact
+{
+    color: var(--deep-dark-green);
+}
+.mobile-menu_footer .contact .title {
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+.mobile-menu_footer .contact  li {
+    margin-bottom: 0.8rem;
+}
+.mobile-menu_footer address  li a{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+.mobile-menu_footer .sites  li
+{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+.mobile-menu_footer .contact  li:hover {
+    color: var(--light-green);
+}
+.mobile-menu_footer .sites  li:hover {
+    color: var(--light-green);
+}
+
+@media(min-width:468px) {
+    .mobile-menu_header{
+        padding: 1.6rem 2.4rem;
+    }
+    .mobile-menu_item {
+        padding: 1.6rem 2.4rem;
+    }
+    .mobile-menu .arrow:after {
+        right: 2.4rem;
+    }
+    .mobile-menu_footer {
+        padding: 3.2rem 2.4rem;
+    }
+}
+
+@media(min-width:668px) {
+    .mobile-menu_body {
+        padding-top: 8rem;
+    }
+    .mobile-menu_header{
+        padding: 1.6rem 4.4rem;
+    }
+    .mobile-menu_item {
+        padding: 2.4rem 4.4rem;
+    }
+    .mobile-menu .arrow:after {
+        right: 4.4rem;
+    }
+    .mobile-menu_footer {
+        padding: 8rem 4.4rem;
+    }
+    .mobile-menu_footer {
+        position: relative;
+    }
+    .mobile-menu_footer .social {
+        position: absolute;
+        top: 8rem;
+        right: 4.4rem;
+    }
+    .mobile-menu_footer .contact {
+        width: 28.7rem;
+    }
+}
+@media(min-width:1024px) {
+    .mobile-menu {
+        display: none;
+    }
+}

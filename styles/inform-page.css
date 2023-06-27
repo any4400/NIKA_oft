@@ -1,0 +1,241 @@
+.inform-page_wrap{
+    padding: 2.4rem 0 0 0;
+}
+.inform-legal{
+    color: var(--dark-green);
+}
+.inform-page_content{
+    margin: 0 1.5rem;
+}
+.inform-page_content-pdf{
+    margin-bottom: 2.4rem;
+}
+.inform-page_content-pdf ul{
+   display: flex;
+   flex-direction: column;
+   gap: 1.6rem;
+}
+.inform-page_content-pdf li a{
+   display: flex;
+   align-items: center;
+   gap: 1.6rem;
+   color: var(--main-green);
+   font-weight: 500;
+   line-height: 1.68rem;
+   transition: 0.3s;
+}
+.inform-page_content-pdf li a:hover{
+   color: var(--light-green);
+}
+.inform-page_content-pdf li a svg path{
+    transition: 0.3s;
+}
+.inform-page_content-pdf li a:hover svg path{
+   fill: var(--light-green);
+}
+.inform-page_content-pdf a svg{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.inform-legal .inform-contact{
+    margin: 2.4rem 0;
+}
+
+.inform-page{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+.inform-page_wrap h2,
+.inform-page_wrap h3{
+    text-align: center;
+}
+.inform-contact_elem.min:not(:last-child){
+    margin-bottom: 1.6rem;
+}
+.inform-contact_elem.big:not(:last-child){
+    margin-bottom: 2.4rem;
+}
+.inform-contact_elem a{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.inform-page .min .inform-contact_title{
+    line-height: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+}
+.inform-page .big .inform-contact_title{
+    text-transform: uppercase;
+    line-height: 1.89rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+.inform-page .inform-contact_elem li:not(:last-child){
+    margin-bottom: 0.8rem;
+}
+.inform-page li > *{
+    padding-left: 2.4rem;
+}
+.inform-page li > *:first-child{
+    position: relative;
+    display: block;
+}
+.inform-page li > *:first-child::after{
+    position: absolute;
+    content: '';
+    width: 1.6rem;
+    height: 1.6rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.inform-page .inform-contact_address::after{
+    background-image: url('../img/inform-page/address.svg');
+}
+.inform-page .inform-contact_tel::after{
+    background-image: url('../img/inform-page/tel.svg');
+}
+.inform-page .inform-contact_fax::after{
+    background-image: url('../img/inform-page/fax.svg');
+}
+.inform-page .inform-contact_mail::after{
+    background-image: url('../img/inform-page/mail.svg');
+}
+.inform-page .inform-contact_site::after{
+    background-image: url('../img/inform-page/site.svg');
+}
+.inform-page .inform-contact_inform::after{
+    background-image: url('../img/inform-page/inform.svg');
+}
+
+.inform-contact_elem.green{
+    font-weight: 500;
+    line-height: 1.89rem;
+    color: var(--main-green);
+}
+.inform-contact_elem.green a{
+    text-decoration: underline;
+    line-height: 1.68rem;
+}
+
+
+.inform-page_control{
+    background: linear-gradient(12.72deg, #DBEBE5 14.05%, #E8F0DB 91.53%);
+    padding: 3.2rem 1.5rem 0.8rem 1.5rem;
+}
+.inform-page_control .inform-contact_elem a:hover{
+    color: var(--main-green);
+}
+.inform-page a:hover::after{
+    filter: brightness(0) saturate(100%) invert(28%) sepia(7%) saturate(3697%) hue-rotate(121deg) brightness(102%) contrast(86%);
+}
+
+
+.inform-contact_inform-title{
+    font-weight: 500;
+    line-height: 1.68rem;
+    margin-bottom: 0.2rem;
+    margin-top:0.8rem;
+}
+.inform-contact_inform-title:first-child{
+    margin-top: 0;
+}
+.inform-contact_inform ul{
+    margin-top: 0.4rem;
+}
+.inform-contact_inform li:not(:last-child){
+    margin-bottom: 0.4rem;
+}
+
+.inform-page .content-part ul li::before{
+    content: '•';
+    font-size: 2rem;
+    left: -1.8rem;
+}
+
+@media (min-width:468px) {
+    .inform-page_content{
+        margin: 0 2.4rem;
+    }
+    .inform-page_control{
+        padding: 3.2rem 2.4rem 0.8rem 2.4rem;
+    }
+    .inform-contact_elem.big:not(:last-child){
+        margin-bottom: 1.6rem;
+    }    
+}
+@media (min-width:668px) {
+    .inform-page_wrap{
+        padding: 3.2rem 0 0 0;
+    }
+    .inform-page_content{
+        margin: 0 4.4rem;
+    }
+    .inform-page_control{
+        padding: 3.2rem 4.4rem 0.8rem 4.4rem;
+    }
+    .inform-page{
+        gap: 4rem;
+    }
+}
+@media (min-width: 1024px) {
+    .inform-page{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4.4rem;
+    }
+     .inform-page_content{
+        margin: 0 0 7.7rem 6.4rem;
+    }
+    .inform-page_control{
+        padding: 3.2rem 6.4rem 3.2rem 3.2rem;
+        border-radius: 2rem 0px 0px 0;        
+        width: 43.6rem;
+        flex-shrink: 0;
+
+    }
+    .inform-page_wrap h2,
+    .inform-page_wrap h3{
+        text-align: left;
+    }
+    .inform-page_content-pdf ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+     .inform-page_content-pdf li a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 12.4rem;
+     }
+
+     .inform-contact_elem.min:not(:last-child){
+        margin-bottom: 2.4rem;
+    }
+    .inform-page .min .inform-contact_title{
+        margin-bottom: 1.6rem;
+    }
+}
+@media (min-width: 1500px) {
+    .inform-page_wrap{
+        padding:4.8rem 0 0 0;
+    }
+    .inform-page{
+        flex-direction: row;
+        gap: 8rem;
+    }
+     .inform-page_content{
+        margin: 0 0 6rem 8rem;
+    }
+    .inform-page_control{
+        padding: 4rem 7.9rem 4rem 4rem;
+        width: 48.6rem;
+        flex-shrink: 0;
+    }
+}

@@ -1,0 +1,260 @@
+
+/*----------------Стили для переключения блоков--------------------*/
+
+.video-block{
+    display: none;
+}
+
+
+.all-reviews_control{
+    display: flex;
+    margin-bottom: 1.6rem;
+    box-shadow: 0px -5px 5px rgba(82, 128, 123, 0.05) inset;
+}
+.all-reviews_control a{
+    display: block;
+    padding: 0.8rem 1.5rem;
+    color: var(--dark-brown60);
+    background-color: #FAFCFB;
+    transition: color 0.3s, background-color 0.3s;    
+    box-shadow: 0px -5px 5px rgba(82, 128, 123, 0.05) inset;
+}
+.all-reviews_control a:first-child{
+    border-radius: 0.8rem 0 0 0;
+}
+.all-reviews_control a:last-child{
+    border-radius: 0 0.8rem 0 0;
+}
+
+.all-reviews_control a.active{
+    position: relative;
+    cursor: default;
+    background: linear-gradient(180deg, #FFFFFF 0.62%, rgba(255, 255, 255, 0) 78.97%);
+    box-shadow: 2px 0px 10px rgba(82, 128, 123, 0.16);
+    color: var(--dark-green);
+}
+.all-reviews_control a.active::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -1rem;
+    width: 100%;
+    height: 2rem;
+    background-color: var(--white);
+}
+.all-reviews_control a:not(.active):hover{
+    background-color: var(--bg-green);
+    color: var(--main-green);
+}
+/*----------------Имитация контейнера для контента--------------------*/
+
+.all-reviews_content{
+    margin: 0 1.5rem;
+}
+
+/*----------------Стили для блока текстовых-отзывов--------------------*/
+
+.all-reviews .text-block .elem:not(:last-child){
+    margin-bottom: 1.6rem;
+}
+.all-reviews .text-block .elem{
+    background-color: var(--bg-green) ;
+    border: 1px solid var(--light-blue);
+    border-radius: 0.8rem;
+    padding: 1.4rem 1.6rem;
+}
+
+.all-reviews .text-block .title{
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+
+.all-reviews .text-block .title-info{
+    display: flex;
+    gap: 1.6rem;
+}
+.all-reviews .text-block .title-photo{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+}
+.all-reviews .text-block .title-photo img{
+    width: 4rem;
+    height: 4rem;
+}
+.all-reviews .text-block .title-data{
+    margin-bottom: 0.4rem; 
+    color: var(--dark-brown60);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+.all-reviews .text-block .title-name{
+    color: var(--dark-green);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+}
+.all-reviews .text-block .title-raiting{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 0.4rem;
+}
+.raiting_item {
+    width: 1.5rem; 
+    height: 1.5rem;
+}
+.raiting_item.yellow {
+    fill: var(--yellow);
+}
+.raiting_item.white {
+    fill: var(--light-blue);
+}
+.all-reviews .text-block .detail{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--blue-green-grey);
+}
+.all-reviews .text-block .detail a{
+    color: var(--main-green);
+    text-decoration: underline 1px var(--main-green);
+    transition: 0.3s;
+}
+.all-reviews .text-block .detail:hover a{
+    color: var(--light-green);
+    text-decoration: underline 1px var(--light-green);
+}
+
+.all-reviews .text-block .elem .content{
+    max-height: 11.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    color: var(--swamp);
+}
+.all-reviews .text-block .content-btn{
+    color: var(--main-green);
+    font-weight: 500;
+    line-height: 1.68rem;
+    padding: 0;
+    margin-top: 0.8rem;
+    width: auto;
+}
+
+
+/*----------------Стили для блока видео-отзывов--------------------*/
+
+
+
+.all-reviews .video-block .elem{
+    text-align: center;
+    color: var(--dark-green);    
+}
+.all-reviews .video-block .elem:not(:last-child){
+    margin-bottom: 3.2rem;
+}
+.all-reviews .video-block iframe{
+    display: block;
+    height: 20.364rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+.all-reviews .video-block .name{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+}
+.all-reviews .video-block .profession{
+    margin-top: 0.4rem;
+    font-weight: 300;
+    line-height: 1.82rem;
+}
+
+
+
+@media (min-width:468px) {
+    .all-reviews_content{
+        margin: 0 2.39rem;
+    }
+    .all-reviews_control{
+        margin-bottom: 1.9rem;
+    }
+    .all-reviews .video-block iframe{
+        height: 22.2rem;
+    }
+}
+
+@media (min-width:668px) {
+    .all-reviews_content{
+        margin: 0 4.45rem;
+    }
+    .all-reviews_control a{
+        padding: 0.8rem 4.4rem;
+    }
+    .all-reviews .video-block iframe{
+        height: 28.1rem;
+    }
+}
+
+@media (min-width:1024px) {
+    .all-reviews_content{
+        margin: 0 6.4rem;
+    }
+    .all-reviews_control a{
+        padding: 0.8rem 6.4rem;
+    }
+    .all-reviews_control{
+        margin-bottom: 3.5rem;
+    }
+    .all-reviews .text-block .elem{
+        padding: 3.2rem;
+    }
+    .raiting_item {
+        width: 2.4rem; 
+        height: 2.4rem;
+    }
+    .all-reviews .text-block .elem:not(:last-child){
+        margin-bottom: 2.4rem;
+    }
+    .all-reviews .text-block .title{
+        margin-bottom: 1.6rem;
+    }
+    .all-reviews .text-block .detail{
+        margin-bottom: 1.6rem;
+    }
+    .all-reviews .text-block .content-btn{
+        margin-top: 1.6rem;
+    }
+    .all-reviews .video-block .elem:not(:last-child){
+        margin-bottom: 2.4rem;
+    }    
+    .all-reviews .video-block iframe{
+        height: 39.2rem;
+        margin-bottom: 1.6rem;
+    }
+}
+
+@media (min-width:1500px) {
+    .all-reviews_content{
+        margin: 0 8rem;
+    }
+    .all-reviews_control a{
+        padding: 0.8rem 8.6rem;
+    }
+    .all-reviews .video-block .elem{
+        margin: 0 auto 2.4rem auto;
+        max-width: 98rem;
+    }        
+    .all-reviews .video-block .elem:last-child{
+        margin: 0 auto;
+    } 
+    .all-reviews .video-block iframe{
+        height: 56.8rem;
+    }
+}

@@ -1,0 +1,159 @@
+
+.pourquoi-nous_list-elem{
+    width: 13.9rem;
+    padding: 1.6rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+}
+.pourquoi-nous_list-elem:hover{
+    box-shadow: 0.2rem 0.2rem 1rem rgba(82, 128, 123, 0.1);
+    background-color: #FAFCFB;
+}
+.pourquoi-nous_list ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+.pourquoi-nous_list-elem a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+.pourquoi-nous_list-elem_text-title{    
+    color: var(--main-green);
+    font-weight: 500;
+}
+.pourquoi-nous_list-elem_text p{  
+    display: none;  
+    color: initial;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.2rem;
+}
+.pourquoi-nous_list-elem_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    margin-bottom: 1.6rem;
+    background-image: linear-gradient(54.9deg, #DBEBE5 12.82%, #E8F0DB 83.51%);
+}
+.pourquoi-nous_list-elem_img img{
+    width: 5.6rem;
+    height: 5.6rem;
+}
+
+.pourquoi-nous_prewiew{
+    display: none;
+}
+
+
+@media (min-width:468px) {
+    .pourquoi-nous_list ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .pourquoi-nous_list-elem{
+        width: 14rem;
+    }
+}
+@media (min-width:668px) {
+    .pourquoi-nous_list ul{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.6rem 2.4rem;
+    }
+    .pourquoi-nous_list-elem{
+        display: flex;
+        align-items: center;
+        width: 27.4rem;
+        padding: 1rem 0;
+    }
+    .pourquoi-nous_list-elem a{
+        flex-direction: row;
+        text-align: start;
+        gap: 1.6rem;
+    }
+    .pourquoi-nous_list-elem_text-title{    
+        margin-bottom: 0.8rem;
+     }
+    .pourquoi-nous_list-elem_text p{  
+        display: -webkit-box;
+    }
+    .pourquoi-nous_list-elem_img{
+        margin-bottom: 0;
+    }
+}
+@media (min-width:1024px) {
+    .pourquoi-nous_list ul{
+        gap: 3.2rem 0.8rem;
+    }
+    .pourquoi-nous_list-elem{
+        width: 43.5rem;
+        padding: 0 2.4rem;
+    }
+    .pourquoi-nous_list-elem_img{
+        width: 6.4rem;
+        height: 6.4rem;
+    }
+    .pourquoi-nous_list-elem_img img{
+        width: 6.4rem;
+        height: 6.4rem;
+    }
+    .pourquoi-nous_list-elem_text p{  
+        -webkit-line-clamp: 3;
+        width: 30.8rem;
+    }
+    .pourquoi-nous_list-elem_text-title{    
+       font-size: 1.6rem;
+    }
+}
+@media (min-width:1500px) {
+    
+    .pourquoi-nous_wrap{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        gap: 13.6rem;
+    }
+
+    .pourquoi-nous_prewiew{
+        display: block;
+    }    
+    .pourquoi-nous_prewiew-img{
+        border-radius: 0.8rem;
+        overflow: hidden;
+        margin-bottom: 2.4rem;
+        width: 65.6rem;
+        height: 41.4rem;
+    }
+    .pourquoi-nous_prewiew-img img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+    .pourquoi-nous_list-elem{
+        height: 9.3rem;
+        width: 55.6rem;
+    }
+    
+    .pourquoi-nous_list ul{        
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+    }
+    .pourquoi-nous_list-elem_text-title{    
+        font-size: 1.8rem;
+    }    
+    .pourquoi-nous_list-elem_text p{  
+        font-size: 1.4rem;
+        width: 43.1rem;
+    }
+    .pourquoi-nous_list-elem a{
+        gap: 4rem;
+    }
+}

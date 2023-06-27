@@ -1,0 +1,70 @@
+.bread-crumbs{
+    margin: 2.4rem 0 1.6rem 0;
+}
+.bread-crumbs ul{
+    display: flex;
+    gap: 0.4rem;
+    color: var(--dark-brown60);
+}
+.bread-crumb_mobile a{
+    position: relative;
+    padding-left: 2.4rem;
+}
+.bread-crumb_mobile a::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.6rem;
+    height: 1.6rem;
+    background-image: url('../img/bread-crumbs/bread-crumb-arrow.svg');
+    background-size: 0.72rem 1.23em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bread-crumb_desktop{
+    display: none;
+    font-size: 1.2rem;
+}
+.bread-crumb_desktop:last-child{
+    color: var(--dark-green);
+}
+.bread-crumb_desktop a{
+    position: relative;
+    padding-right: 2rem;
+    transition: 0.3s;
+}
+.bread-crumb_desktop a:hover{
+    color: var(--main-green);
+}
+.bread-crumb_desktop a::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    width: 1.6rem;
+    height: 1.6rem;
+    background-image: url('../img/bread-crumbs/bread-crumb-arrow.svg');
+    background-size: 0.4rem 0.8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+    .bread-crumbs{
+        margin: 2.4rem 0 2.4rem 0;
+    }
+    .bread-crumb_mobile{
+        display: none;
+    }
+    .bread-crumb_desktop{
+        display: block;
+    }
+}
+@media (min-width: 1500px) {
+    .bread-crumbs{
+        margin: 3.2rem 0 3.2rem 0;
+    }
+}

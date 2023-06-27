@@ -1,0 +1,24 @@
+.photo_slider-wrap{
+    margin-bottom: 2.4rem;
+}
+.education-specialist{
+    color: var(--dark-green);
+    max-height: 24.2rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+@media(min-width:468px) {
+    .education-specialist{
+        max-height: 20.2rem;
+    }
+}
+@media(min-width:668px) {
+    .education-specialist{
+        max-height: 16.9rem;
+    }
+}
+@media(min-width:1024px) {
+    .education-specialist{
+        max-height: 18.6rem;
+    }
+}

@@ -1,0 +1,41 @@
+.university .achievements_list{
+    display: grid;
+    gap: 1.6rem;
+}
+.university .achievements_slide {
+    height: auto;
+}
+@media (min-width: 1024px) {
+    .university .achievements_list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .university .achievements_slide{
+        width: 100%;
+    }
+    .university .achievements_text {
+        -webkit-line-clamp: 5;
+    }
+}
+@media (min-width: 1500px) {
+    .university .achievements_slide {
+        flex-direction: column;
+        gap: 1.6rem;
+        width:  100%;
+        height: auto;
+    }
+    .university .achievements_img_wrapper {
+        width: auto;
+        height: 18.6rem;
+    }
+    .university .achievements_info {
+        width: auto;
+        text-align: center;
+    }
+    .university .achievements_title {
+        font-size: 1.7rem;
+        line-height: 2.21rem;
+    }
+    .university .achievements_text {
+        -webkit-line-clamp: 4;
+    }
+}

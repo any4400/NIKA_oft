@@ -1,0 +1,134 @@
+* {
+    box-sizing:border-box;
+}
+.appointment-form_banner {
+    position: relative;
+    width: 100%;
+    padding: 3.2rem 1.5rem;
+    background: linear-gradient(225.13deg, rgba(29, 97, 87, 0.8) 5.8%, rgba(99, 153, 171, 0.8) 123.08%), url(../img/appointment-form/form-bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    color: var(--white);
+}
+.appointment-form_title {
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.appointment-form_subtitle {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.96rem;
+    text-align: center;
+}
+.appointment-form_form {
+    width: 100%;
+    padding: 2.4rem 0;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.appointment-form_form button {
+    margin-top: 2.4rem;
+}
+.appointment-form .agreement {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.82rem;
+    text-align: center;
+    color: var(--white);
+}
+.appointment-form .agreement a {
+    text-decoration: underline;
+}
+.appointment-form input {
+    width: 100%;
+    padding: 0.9rem 1.6rem;
+    background-color: var(--white);
+    opacity: 0.9;
+    border: none;
+    border-radius: 0.8rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.82rem;
+    color: var(--main-green);
+    transition-property: background-color, color;
+    transition-duration: .3s;
+  }
+  
+  .appointment-form input.error {
+    padding: calc(0.9rem - 1px) calc(1.6rem - 1px);
+    border: 1px solid var(--main-red);
+    background-color: var(--light-red);
+    color: var(--main-red);
+  }
+  
+  .appointment-form input::placeholder {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.82rem;
+    color: var(--blue-green-grey);
+  }
+  
+  .appointment-form input.error::placeholder {
+    color: var(--main-red);
+  }
+  .appointment-form input:focus::placeholder {
+    color: transparent;
+  }
+@media(min-width:468px) {
+    .appointment-form_banner {
+        padding: 3.2rem 2.4rem;
+    }
+}
+
+@media(min-width:668px) {
+    .appointment-form_banner {
+        padding: 4rem 12.4rem;
+    }
+}
+
+@media(min-width:1024px) {
+    .appointment-form {
+        padding: 0 6.4rem;
+    }
+    .appointment-form_banner {
+        padding: 6rem 40.1rem 6rem 5.6rem;
+        border-radius: 1.6rem;
+   }
+   .appointment-form_img {
+        position: absolute;
+        width: 33.3rem;
+        height: 49.8rem;
+        bottom: 0;
+        right: 1.7rem;
+        background-image: url(../img/appointment-form/doctor-1.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position:40% 50%;
+   }
+}
+
+@media(min-width:1500px) {
+    .appointment-form {
+        padding: 0 8rem;
+    }
+    .appointment-form_banner {
+        padding: 6rem 64.2rem 6rem 13.4rem;
+    }
+    .appointment-form_img {
+        position: absolute;
+        width: 41rem;
+        height: 46.9rem;
+        bottom: 0;
+        right: 6.4rem;
+        background-size:220%;
+        background-position:40% 0%;
+   }
+}

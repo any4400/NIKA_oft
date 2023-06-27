@@ -1,0 +1,117 @@
+.coincidence-search{
+    display: flex;
+    gap: 0.8rem;
+    line-height: 1px;
+}
+.coincidence-search_btn{
+    flex-shrink: 0;
+    width: 7.5rem;
+    height: 3.8rem;
+}
+.coincidence-count{
+    margin-top: 1.6rem;
+    color: var(--dark-brown60);
+}
+.coincidence-elem{
+    display: block;
+    padding: 2.4rem 1.5rem 0 1.5rem;
+    transition: 0.3s;
+}
+.coincidence-elem:hover{
+    background-color: var(--bg-green);
+}
+.coincidence-chapter{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0.8rem;
+    height: 2.6rem;
+    border-radius: 0.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: var(--main-green);
+    background: linear-gradient(0deg, #DBEBE5 0%, #E8F0DB 100%);
+}
+.coincidence-text{
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid var(--light-blue);
+}
+.coincidence-title{
+    padding: 1.6rem 0 0.8rem 0;
+    color: var(--main-green);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.1rem;    
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.coincidence-title b{
+    font-weight: 700;
+}
+.coincidence-content {    
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.coincidence-content b{
+    font-weight: 700;
+    line-height: 1.89rem;
+}
+
+@media (min-width: 468px){
+    .coincidence-elem{
+        padding: 2.4rem 2.4rem 0 2.4rem;
+    }
+    .coincidence-count{
+        margin-top: 2.4rem;
+    }
+}
+@media (min-width: 668px){
+    .coincidence-elem{
+        padding: 2.4rem 4.4rem 0 4.4rem;
+    }
+    .coincidence-title{
+        font-size: 1.8rem;
+        line-height: 2.4rem;    
+    }
+    .coincidence-search{
+        line-height: 2rem;
+    }
+    .coincidence-search_btn{
+        width: 18.8rem;
+        height: 4rem;
+    }
+}
+@media (min-width: 1024px){
+    .coincidence-elem{
+        padding: 2.4rem 6.4rem 0 6.4rem;
+    }
+    .coincidence-count{
+        margin-bottom: 0.8rem;
+    }
+    .coincidence-title{
+        font-size: 1.9rem;
+        line-height: 2.9rem;    
+    }
+}
+@media (min-width: 1500px){
+    .coincidence-elem{
+        padding: 2.4rem 19.3rem 0 19.3rem;
+    }
+    .container-1500{
+        padding: 0 19.3rem;
+    }
+    .coincidence-count{
+        margin: 4.8rem 0 2.4rem 0;
+    }
+    .coincidence-content {    
+        -webkit-line-clamp: 2;
+    }
+    
+    .coincidence-search_btn{
+        width: 21.6rem;
+    }
+}

@@ -1,0 +1,163 @@
+.preparation{
+    display: flex;
+    gap: 10.45rem;
+}
+.preparation-logo_wrap{
+    display: none;
+}
+.preparation-logo{
+    width: 24.4rem;
+}
+
+.preparation-content .arrow-right {
+    display: inline-block;
+}
+
+
+.need-preparation {
+    display: flex;
+    align-items: center;
+    border-top: var(--light-blue) solid 1px;
+    border-bottom: var(--light-blue) solid 1px;
+    padding: 3.2rem 0.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.need-prep-subtitle {
+    display: none;
+    font-weight: 300;
+}
+
+.need-preparation a {
+    margin-top: 0.8rem;
+}
+
+.need-prep-title {
+    color: var(--main-green);
+    line-height: 1.96rem;
+}
+
+.need-img_wrap {
+    height: 8.9rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0 1.2rem;
+}
+
+.need-img_picture {
+    position: absolute;
+    top: 0;
+}
+
+.need-img_circle {
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    background-image: linear-gradient(54.9deg, #DBEBE5 12.82%, #E8F0DB 83.51%);
+}
+
+.choosing-clinic{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.clinic-title {
+    display: inline-block;
+    color: var(--main-green);
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px dashed var(--main-green);
+    cursor: pointer;
+}
+.choosing-clinic_elem p {
+    margin: 2rem 0 1.6rem 0;
+    font-weight: 300;
+}
+.clinic-details--js{
+    display: none;
+}
+
+
+@media (min-width:468px) {
+    .need-preparation {
+        padding: 3.2rem 0;
+    }
+    .need-img_wrap {
+        padding: 0;
+    }
+}
+
+@media (min-width:668px) {
+    .need-prep-title {
+        font-size: 1.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 2.9rem;
+    }
+
+    .need-prep-subtitle {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 1.6rem 0 2.4rem 0;
+    }
+
+    .need-preparation a {
+        margin-top: 0;
+    }
+
+    .need-preparation {
+        gap: 8rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .need-img_wrap {
+        height: 13.5rem;
+    }
+
+    .need-img_picture {
+        position: absolute;
+        top: 0;
+    }
+
+    .need-img_circle {
+        width: 8.5rem;
+        height: 8.5rem;
+    }
+
+    .need-img_picture {
+        width: 7.8rem;
+    }
+    .clinic-title {
+        font-size: 1.8rem;
+    }
+    .choosing-clinic_elem a.clinic-link{
+        font-size: 1.4rem;
+    }
+}
+@media (min-width:1024px) { 
+    .need-preparation {
+        gap: 15.1rem;
+    }
+    .need-prep-subtitle {
+        -webkit-line-clamp: 3;
+    }
+    .choosing-clinic{
+        display: flex;
+        flex-direction: row;
+        gap: 3.2rem;
+    }.choosing-clinic_elem {
+        width: 43rem;
+    }
+}
+@media (min-width:1500px) { 
+    .preparation-logo_wrap{
+        display: flex;
+        height: 25.4rem;
+    }
+}

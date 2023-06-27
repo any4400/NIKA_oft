@@ -1,0 +1,118 @@
+.online-consult{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.2rem 1.5rem;
+    background: linear-gradient(54.9deg, rgba(219, 235, 229, 0.95) 12.82%, rgba(232, 240, 219, 0.95) 83.51%), url('../img/online-consult/background.png');
+    background-size: cover;
+    background-position: center;
+}
+.online-consult_wrap h2{
+    margin-bottom: 0;
+    color: var(--dark-green);
+}
+.online-consult_img img{
+    width: 14rem;
+    height: 14rem;
+    margin-bottom: 2.4rem;
+}
+.online-consult_text{
+    text-align: center;
+    margin: 0.8rem 0 2.4rem 0;
+    color: var(--swamp);
+}
+.online-consult_text p{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.online-consult_text-link{
+    font-weight: 700;
+    color: var(--dark-green);
+}
+.online-consult_wrap button{
+    width: 22.8rem;
+}
+
+@media (min-width:468px) {
+    .online-consult{
+        padding: 3.2rem 2.4rem;
+    }
+}
+
+@media (min-width:668px) {
+    .online-consult{
+        padding: 4rem 4.6rem;
+        flex-direction: row;
+        gap: 6.3rem;
+    }
+    .online-consult_img img{
+        margin-bottom: 0rem;
+    }
+    .online-consult_text{
+        text-align: left;
+    }
+    .online-consult_wrap h2{
+        text-align: left;
+    }
+    .online-consult_wrap .m-0-a{
+        margin: 0;
+    }
+}
+@media (min-width:1024px) {
+    .online-consult{
+        padding: 6rem 6.4rem;
+        gap: 5.8rem;
+    }
+    .online-consult_img img{
+        width: 16.642rem;
+        height: 16.392rem;
+    }
+    .online-consult_img{
+        padding: 2.5rem 4.179rem;
+    }
+    .online-consult_text{
+        margin: 0.8rem 0 3.2rem 0;
+    }
+    .online-consult_wrap{
+      padding-right: 0.8rem;
+    }
+    
+    .online-consult_wrap button{
+        height: 3.8rem;
+    }
+}
+@media (min-width:1500px) {
+    .online-consult{
+        padding: 6rem 19.8rem;
+        gap: 6.4rem;
+    }
+    .online-consult_wrap{
+        padding-right: 3.2rem;
+      }
+    .online-consult_img{
+        padding: 1.6rem 4.279rem;
+    }
+    .online-consult::after,
+    .online-consult::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        background-size: cover;
+        background-position: center;
+    }
+    .online-consult::before{
+        height: 32rem;
+        width: 9.2rem;
+        left: -0.2rem;
+        background-image: url('../img/online-consult/left-line.svg');
+    }
+    .online-consult::after{
+        height: 30.1rem;
+        width: 13rem;
+        right: 0;
+        background-image: url('../img/online-consult/right-line.svg');
+    }
+}
